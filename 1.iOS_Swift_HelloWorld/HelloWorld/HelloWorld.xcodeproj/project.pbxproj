@@ -12,7 +12,23 @@
 		C86F0FD82330C90E00D4BD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86F0FD62330C90E00D4BD85 /* Main.storyboard */; };
 		C86F0FDA2330C91100D4BD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86F0FD92330C91100D4BD85 /* Assets.xcassets */; };
 		C86F0FDD2330C91100D4BD85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86F0FDB2330C91100D4BD85 /* LaunchScreen.storyboard */; };
+		C8E597342332046F00CCDC06 /* AlamoWater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E597332332046F00CCDC06 /* AlamoWater.framework */; };
+		C8E597352332046F00CCDC06 /* AlamoWater.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8E597332332046F00CCDC06 /* AlamoWater.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8E597362332046F00CCDC06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C8E597352332046F00CCDC06 /* AlamoWater.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C86F0FCF2330C90E00D4BD85 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		C86F0FD92330C91100D4BD85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C86F0FDC2330C91100D4BD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C86F0FDE2330C91100D4BD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E597332332046F00CCDC06 /* AlamoWater.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlamoWater.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E597342332046F00CCDC06 /* AlamoWater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +56,10 @@
 		C86F0FC62330C90D00D4BD85 = {
 			isa = PBXGroup;
 			children = (
+				C8E597332332046F00CCDC06 /* AlamoWater.framework */,
 				C86F0FD12330C90E00D4BD85 /* HelloWorld */,
 				C86F0FD02330C90E00D4BD85 /* Products */,
+				C8CADE0D233201E4002A82AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +84,13 @@
 			path = HelloWorld;
 			sourceTree = "<group>";
 		};
+		C8CADE0D233201E4002A82AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +101,7 @@
 				C86F0FCB2330C90D00D4BD85 /* Sources */,
 				C86F0FCC2330C90D00D4BD85 /* Frameworks */,
 				C86F0FCD2330C90D00D4BD85 /* Resources */,
+				C8E597362332046F00CCDC06 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +225,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -258,6 +287,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -284,6 +314,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRW3Q6G293;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +337,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRW3Q6G293;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
