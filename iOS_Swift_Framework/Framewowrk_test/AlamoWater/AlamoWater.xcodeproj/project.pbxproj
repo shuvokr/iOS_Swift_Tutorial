@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		C8CADE082331F79F002A82AE /* UninersalAlamoWater */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C8CADE092331F7A0002A82AE /* Build configuration list for PBXAggregateTarget "UninersalAlamoWater" */;
+			buildPhases = (
+				C8CADE0C2331F7D8002A82AE /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UninersalAlamoWater;
+			productName = UninersalAlamoWater;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		C8CADE002331F317002A82AE /* AlamoWater.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CADDFE2331F317002A82AE /* AlamoWater.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8CADE072331F43E002A82AE /* AlamoWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CADE062331F43E002A82AE /* AlamoWater.swift */; };
@@ -100,6 +114,9 @@
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
 					};
+					C8CADE082331F79F002A82AE = {
+						CreatedOnToolsVersion = 10.3;
+					};
 				};
 			};
 			buildConfigurationList = C8CADDF52331F317002A82AE /* Build configuration list for PBXProject "AlamoWater" */;
@@ -115,6 +132,7 @@
 			projectRoot = "";
 			targets = (
 				C8CADDFA2331F317002A82AE /* AlamoWater */,
+				C8CADE082331F79F002A82AE /* UninersalAlamoWater */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +146,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8CADE0C2331F7D8002A82AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8CADDF72331F317002A82AE /* Sources */ = {
@@ -316,6 +354,24 @@
 			};
 			name = Release;
 		};
+		C8CADE0A2331F7A0002A82AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRW3Q6G293;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8CADE0B2331F7A0002A82AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRW3Q6G293;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +389,15 @@
 			buildConfigurations = (
 				C8CADE042331F317002A82AE /* Debug */,
 				C8CADE052331F317002A82AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CADE092331F7A0002A82AE /* Build configuration list for PBXAggregateTarget "UninersalAlamoWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CADE0A2331F7A0002A82AE /* Debug */,
+				C8CADE0B2331F7A0002A82AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
