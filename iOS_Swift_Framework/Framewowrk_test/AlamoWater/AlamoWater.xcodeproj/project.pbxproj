@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C8CADE002331F317002A82AE /* AlamoWater.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CADDFE2331F317002A82AE /* AlamoWater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8CADE072331F43E002A82AE /* AlamoWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CADE062331F43E002A82AE /* AlamoWater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8CADDFB2331F317002A82AE /* AlamoWater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoWater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CADDFE2331F317002A82AE /* AlamoWater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamoWater.h; sourceTree = "<group>"; };
 		C8CADDFF2331F317002A82AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CADE062331F43E002A82AE /* AlamoWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoWater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				C8CADDFE2331F317002A82AE /* AlamoWater.h */,
 				C8CADDFF2331F317002A82AE /* Info.plist */,
+				C8CADE062331F43E002A82AE /* AlamoWater.swift */,
 			);
 			path = AlamoWater;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					C8CADDFA2331F317002A82AE = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CADE072331F43E002A82AE /* AlamoWater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		C8CADE042331F317002A82AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = learn.ios.shuvo.AlamoWater;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		C8CADE052331F317002A82AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
